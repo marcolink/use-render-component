@@ -22,7 +22,7 @@
     "typescript": "^3.7.3"
   },
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest"
   },
   "jest": {
     "testMatch": [
