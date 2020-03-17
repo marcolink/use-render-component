@@ -21,11 +21,15 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
+    
+    # install all dependencies
+    - name: NPM or Yarn install with caching
+    uses: bahmutov/npm-install@v1.1.0
+    
     # Runs a single command using the runners shell
-    - name: Run tests
-      run: |
-        yarn test
-        echo tests completed
+    # - name: Run tests
+    #  run: |
+    #    yarn test
+    #    echo tests completed
 
  
